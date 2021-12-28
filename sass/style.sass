@@ -1,0 +1,58 @@
+*
+  box-sizing: border-box
+body 
+  font-family: 'Montserrat', sans-serif
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 26px
+.main
+  background: url("../img/main-bg.jpg") no-repeat center center / 100%
+.container
+  max-width: 1120px
+  width: 100%
+  margin: auto
+.menu
+  &-list
+    display: flex
+    list-style-type: none
+  &-item:not(:last-child)
+    margin-right: 20px
+  &-link 
+    text-decoration: none
+    color: #fff
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    &:hover
+      color: #ffc700
+      transition: all 0.2s
+.hero
+  &-section
+    margin-top: 154px
+    padding-bottom: 248px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-btn 
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%)
+    color: #fff
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    padding: 16px 53px
+    border-radius: 60px
+    border: none
+    cursor: pointer
+.title
+  &-img
+    display: block
+    margin-bottom: 60px
+.social
+  display: flex
+  flex-direction: column
+.social
+  &-link:not(:last-child)
+    margin-bottom: 8px
+  
