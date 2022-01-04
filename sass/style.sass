@@ -42,7 +42,8 @@ body
       background-color: transparent
       justify-content: space-between
       flex-direction: column
-    
+.mobile-title-img
+  display: none    
 .btn
   &-line 
     display: block
@@ -146,16 +147,47 @@ body
       height: 187px
   .first
     right: 200px
-@media (min-width: 768px)
+@media (max-width: 768px)
   .menu
     &-list
       display: none
     &-item:not(:last-child)
       margin-bottom: 15px
       padding: 0
+  .hero-btn
+    display: inline-block
+    margin-top: 90px
   .mobile
     &-menu
       &-item
         color: #000
       &-btn 
         display: flex
+  .title-img
+    display: none
+  .mobile-title-img
+    display: block
+  .hero-slide
+    bottom: -58px
+@media (max-width: 522px)
+  .slide
+    &-img
+      max-width: 250px
+      margin-right: 0
+  .first 
+    right: 143px
+  .mobile-menu-list
+    width: 200px
+@media (max-width: 428px)
+  .hero-slide
+    bottom: -200px
+  .main-bg
+    height: 928px
+  .social
+    position: relative
+    top: 300px
+  .slide-img
+    width: 220px
+    height: 145px
+  .first
+    right: 110px
