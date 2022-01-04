@@ -58,11 +58,9 @@ body {
 }
 
 .mobile-menu-btn {
+  display: none;
   border: none;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -237,6 +235,11 @@ body {
   }
   .mobile-menu-item {
     color: #000;
+  }
+  .mobile-menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */
