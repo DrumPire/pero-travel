@@ -23,7 +23,7 @@ body
 .mobile
   &-menu
     &-list
-      display: none
+      opacity: 0
       list-style: none
       position: absolute
       top: 0
@@ -34,7 +34,7 @@ body
       height: 100%
       margin: 0
       padding: 30px 30px
-      transform: translateX(-100%)
+      transform: translateX(100%)
       transition: transform 0.5s
     &-btn 
       display: none
@@ -54,6 +54,7 @@ body
     &:not(:last-child)
       margin-bottom: 5px
   &-close
+    display: block
     border: none
     background-color: transparent
     font-weight: 700
@@ -70,7 +71,8 @@ body
   right: 0
   bottom: 0
 .active
-  display: flex
+  display: block
+  opacity: 1
   flex-direction: column
   transform: translateX(0)
 .menu

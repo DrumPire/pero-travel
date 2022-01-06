@@ -6,13 +6,11 @@ const closeMobileMenuBtn = document.querySelector('.btn-close');
 const openMobileMenu = () => {
   mobileMenu.classList.add('active');
   overley.classList.add('active');
-  document.body.style.overflowY = 'clip';
 };
 
 const closeMobileMenu = () => {
   mobileMenu.classList.remove('active');
   overley.classList.remove('active');
-  document.body.style.overflowY = '';
 };
 
 mobileMenuBtn.addEventListener('click', openMobileMenu);
