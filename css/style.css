@@ -38,7 +38,6 @@ body {
 }
 
 .mobile-menu-list {
-  opacity: 0;
   list-style: none;
   position: absolute;
   top: 0;
@@ -68,6 +67,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.mobile-menu-list.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-title-img {
@@ -107,15 +111,9 @@ body {
   bottom: 0;
 }
 
-.active {
+.overley.active {
   display: block;
   opacity: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .menu-list {

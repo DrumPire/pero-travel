@@ -23,7 +23,6 @@ body
 .mobile
   &-menu
     &-list
-      opacity: 0
       list-style: none
       position: absolute
       top: 0
@@ -42,6 +41,8 @@ body
       background-color: transparent
       justify-content: space-between
       flex-direction: column
+.mobile-menu-list.active
+  transform: translateX(0)
 .mobile-title-img
   display: none    
 .btn
@@ -70,11 +71,9 @@ body
   left: 0
   right: 0
   bottom: 0
-.active
-  display: block
-  opacity: 1
-  flex-direction: column
-  transform: translateX(0)
+  &.active
+    display: block
+    opacity: 1
 .menu
   &-list
     display: flex
