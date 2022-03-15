@@ -3,6 +3,8 @@
 body 
   font-family: 'Montserrat', sans-serif
   overflow-x: hidden
+$title-color: #0499dd
+$second-color: #282828
 .header
   display: flex
   align-items: center
@@ -105,6 +107,8 @@ body
     padding: 16px 53px
     border-radius: 60px
     text-decoration: none
+  &-btn:hover 
+    background: lighten($title-color, 10%)
   &-slider
     position: relative
     overflow-x: clip
@@ -134,8 +138,31 @@ body
     height: 227px
     margin-right: 20px
     border-radius: 10px
+.excursions
+  &-sectiion
+    padding-top: 260px
 
-      
+.section
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 90px
+  &-title 
+    color: $title-color
+    font-weight: 700
+    font-size: 24px
+    line-height: 29px
+  &-description
+    display: block
+  &-description a 
+      color: $second-color
+      font-weight: 500
+      font-size: 12px
+      line-height: 15px
+  &-description a:hover 
+    color: lighten($second-color, 50%)
+
 @media ( max-width: 1280px )
   .container
     width: 90%

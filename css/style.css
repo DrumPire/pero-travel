@@ -166,6 +166,10 @@ body {
   text-decoration: none;
 }
 
+.hero-btn:hover {
+  background: #19b4fb;
+}
+
 .hero-slider {
   position: relative;
   overflow-x: clip;
@@ -209,6 +213,45 @@ body {
   height: 227px;
   margin-right: 20px;
   border-radius: 10px;
+}
+
+.excursions-sectiion {
+  padding-top: 260px;
+}
+
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 90px;
+}
+
+.section-title {
+  color: #0499dd;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.section-description {
+  display: block;
+}
+
+.section-description a {
+  color: #282828;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.section-description a:hover {
+  color: #a8a8a8;
 }
 
 @media (max-width: 1280px) {
